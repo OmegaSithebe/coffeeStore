@@ -189,6 +189,17 @@ header .navbar {
     --font-size-xxl: 1.8rem;
     }
 
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
     .navbar :where(#menu-close-button, #menu-open-button) {
         display: block;
         font-size: var(--font-size-l);
@@ -229,5 +240,26 @@ header .navbar {
         margin-top: 17px;
         background: var(--white-color);
         font-size: var(--font-size-l);
+    }
+
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description) {
+        max-width: 100px;
+    } 
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
     }
 }
