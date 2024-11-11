@@ -52,6 +52,10 @@
     --site-max-width: 1300px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -94,7 +98,7 @@ ul{
     max-width: 800px;
     min-height: 500px;
     margin: 5em auto;
-    background-color: var(--main-color);
+    background-color: #FD6E6A;
     overflow: hidden;
     box-shadow: rgba(0,0,0,0.45) 0 25px 20px -20px;
 }
@@ -124,15 +128,15 @@ a{
     margin-bottom: 60px;
     font-size: 18px;
     font-weight: 700;
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 
 .logo span{
-    color: #2311eb;
+    color: #fff;
 }
 
 .content-heading p{
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .content-form{
@@ -216,27 +220,45 @@ form :is(p, label) a:hover .afterform a:hover{
 .content-form::before{
     content: '';
     position: absolute;
-    width: 200%;
-    height: 200%;
+    width: 1500px;
+    height: 1000px;
     background-color: #fff;
-    border-radius: 60%;
-    transform: translate3d(-27%, -21% 0);
-    -webkit-transform: translate3d(-27%, -21% 0);
+    border-radius: 90%;
+    transform: translate3d(-20%, 21%, 0);
+    -webkit-transform: translate3d(-15%, 30%, 0);
+
+    animation: fade-in 0.7 cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    -webkit-animation: fade-in 0.7s  cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
 }
 
 .y-style{
     position: relative;
     transform: translate3d(0 20% 0 );
     -webkit-transform: translate3d(0 20% 0 );
-    animation: forwards;
-    
+    animation: fade-in 0.7 cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    -webkit-animation: fade-in 0.7s  cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in{
+    form{
+        opacity: 0;
+        transform: translate3d(0 20% 0);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+:is(.login-show .signup-show) .y-style{
+    transform: translate3d(0,0,0);
 }
 
 .social :is(ul, p){
     display: flex;
     justify-content: center;
     position: relative;
-    gap: 24;
+    gap: 15px;
     margin: 20px 0;
 }  
 

@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Raleway", sans-serif;
 }
 
 :root {
@@ -26,6 +26,7 @@
     --main-color: #4a3adc;
     --dark-color: #11152a;
     --light-color:#d0d4ed;
+    --hero-back: #FD6E6A;
 
 
     /* Font size */
@@ -103,7 +104,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: var(--primary-color);
+    background-image: linear-gradient( 135deg, #FD6E6A 10%);
 }
 
 header .navbar {
@@ -113,30 +114,69 @@ header .navbar {
     justify-content: space-between;
 }
 
-.navbar .nav-logo .logo-text {
-    color: var(--grey-color);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
+/* Ensure the navbar sticks at the top */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
 }
 
+/* Align nav links in an equal row */
 .navbar .nav-menu {
     display: flex;
     gap: 10px;
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-menu .nav-item {
+    display: flex;
+    align-items: center;
 }
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    background: var(--primary-color);
+    background-image: linear-gradient(135deg, #FD6E6A 10%);
     color: var(--grey-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
+    text-decoration: none; /* Removes underline from links */
 }
 
 .navbar .nav-menu .nav-link:hover {
     color: var(--white-color);
     background: var(--green-color);
 }
+
+/* Specific styles for Login/Signup button */
+.navbar .nav-menu .login-signup-button {
+    background: var(--green-color);
+    color: white;
+}
+
+.navbar .nav-menu .login-signup-button:hover {
+    color: #FD6E6A;
+    background: var(--green-color); /* Keep the hover state background green */
+}
+
+/* Ensure buttons have similar styling */
+.navbar .nav-menu button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: var(--font-size-m);
+}
+
+
+
 
 .navbar :where(#menu-close-button, #menu-open-button) {
     display: none;
@@ -146,7 +186,7 @@ header .navbar {
 /* Hero section styling */
 .hero-section {
     min-height: 100vh;
-    background: var(--primary-color)
+    background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
 }
 
 .hero-section .section-content {
@@ -214,6 +254,7 @@ header .navbar {
     border-radius: var(--border-radius-circle);
 }
 
+
 /* About section */
 .about-section {
     padding: 120px 0;
@@ -268,7 +309,7 @@ header .navbar {
 /* Our Courses */
 .course-section {
     color: var(--white-color);
-    background: var(--grey-color);
+    background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
     padding: 50px 0 100px;
 }
 
@@ -321,7 +362,7 @@ header .navbar {
     display: none;
 }
 .read-more-link {
-    color: #007BFF;
+    color: #FD6E6A;
     cursor: pointer;
     text-decoration: underline;
 }

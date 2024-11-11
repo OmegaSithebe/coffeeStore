@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoSpeak</title>
+    <!-- Linking Font Awesome font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>    
+    <div id="page" class="site login-show">
+        <div class="container" id="loginPage">
+            <div class="wrapper">
+                <div class="login"> 
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a href="#">Techno<span>Speak</span></a></div>
+                            <div class="welcome">
+                            <h2>Welcome <br>Back!</h2>
+                            <p>Here you can login or register</p>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form onsubmit="redirectToHomePage(event)">
+                                <p>
+                                    <label for="">Email</label>
+                                    <input type="text" placeholder="Enter Email">
+                                </p>
+                                <p>
+                                    <label for="">Password</label>
+                                    <input type="password" placeholder="Enter Password">
+                                </p>
+                                <p class="check">
+                                    <input type="checkbox" id="remember">
+                                    <label for="">Remember me</label>
+                                </p>
+                                <p class="forgot"><a href="#">Forgot Password?</a></p>
+                                <p><button type="submit">Login</button></p>
+                            </form>                            
+                            
+                            <div class="afterform">
+                                <p>Don't have an Account?</p>
+                                <a href="#signUpPage" class="t-signup">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- signup form -->
+                 
+                <div class="signup" id="signUpPage">
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a href="#">Techno<span>Speak</span></a></div>
+                            <div class="welcome">
+                            <h2>Sign Up<br>Now!</h2>
+                            <p>Here you can login or register</p>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form action="">
+                            <p>
+                                <label for="">Your Name:</label>
+                                <input type="text" placeholder="Enter Name">
+                            </p>
+                            <p>
+                                <label for="">Email</label>
+                                <input type="text" placeholder="Enter Email">
+                            </p>
+                            <p>
+                                <label for="">Password</label>
+                                <input type="password" placeholder="Enter Password">
+                            </p>
+                            <p class="check">
+                                <input type="checkbox" id="remember">
+                                <label for="terms">I agree  to terms and conditions</label>
+                            </p>
+                            <p class="forgot"><a href="#">Forgot Password?</a></p>
+                            <p><button type="button" onclick="scrollToTop()">Sign Up</button></p>
+                            </form>
+                            <div class="social">
+                                <p><span>Or Sign Up  With...</span></p>
+                                <ul>
+                                    <li><a href="" class="google"><ion-icon name="logo-google"></ion-icon></a></li>
+                                    <li><a href="" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                    <li><a href="" class="twitter"><ion-icon name="close"></ion-icon></a></li>
+                                </ul>
+                            </div>
+                            <div class="afterform">
+                                <p>Already have an Account?</p>
+                                <a href="#" class="t-login">Login Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>

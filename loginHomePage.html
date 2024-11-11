@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoSpeak</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Linking Font Awesome font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">TechnoSpeak</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link login-signup-button" onclick="redirectToLogin()">Logout</button>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    
+    <div class="video-gallery">
+        <div class="featured-video">
+            <br><br><br><br>
+            <h2>Course Video</h2>
+            <div class="video-card" onclick="playVideo('videos/AIchatbots.mp4')">
+                <img src="images/mega.png" alt="">
+                <h3>AI Chatbot Course: Beginner to Professional.</h3>
+
+                <img class="play-icon" src="images/play-icon.png" alt="">
+            </div>
+        </div>
+
+        <h2 class="related-videos-title">More Course Videos</h2>
+
+        <div class="related-videos">
+            <div class="video-card" onclick="playVideo('videos/MicrosoftCopilot.mp4')">
+                
+                <div class="thumbnail">
+                    <img src="images/hloks.png" alt="">
+
+                    <img class="play-icon" src="images/play-icon.png" alt="">
+                </div>
+                
+                <h3>How To Get Good At MS CoPilot</h3>
+                
+            </div>
+
+            <div class="video-card" onclick="playVideo('videos/WPS.mp4')">
+                
+                <div class="thumbnail">
+                    <img src="images/rose.png" alt="">
+
+                    <img class="play-icon" src="images/play-icon.png" alt="">
+                </div>
+                
+                <h3>Let's Explore PowerPoint (WPS) </h3>
+                
+            </div>
+
+            <div class="video-card" onclick="playVideo('videos/GoogleTips.mp4')">
+                
+                <div class="thumbnail">
+                    <img src="images/junior.png" alt="">
+
+                    <img class="play-icon" src="images/play-icon.png" alt="">
+                </div>
+                
+                <h3>Google Tips & Tricks - Stay Tune!</h3>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <div class="video">
+        <video controls autoplay class="videoPlayer">
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+
+        <div class="close-btn">+</div>
+    </div>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- Course Assignment Form -->
+    <!-- <div class="form-overlay" id="form-overlay"></div>
+    <div class="form-popup" id="form-popup">
+        <h3>Assign Course</h3>
+        <form id="assign-course-form">
+            <label for="course-name">Course Name:</label>
+            <select id="course-name" name="course-name">
+                <option value="Microsoft Office">Microsoft Office</option>
+                <option value="AI ChatBots">AI ChatBots</option>
+                <option value="Windows OS">Windows OS</option>
+                <option value="Google Services">Google Services</option>
+                <option value="PDF AI">PDF AI</option>
+                <option value="YouTube">YouTube</option>
+            </select>
+
+            <label for="course-cost">Course Cost:</label>
+            <select id="course-cost" name="course-cost">
+                <option value="500">Microsoft Office - R500</option>
+                <option value="800">AI ChatBots - R800</option>
+                <option value="400">Windows OS - R400</option>
+                <option value="750">Google Services - R750</option>
+                <option value="300">PDF AI - R300</option>
+                <option value="450">YouTube - R450</option>
+            </select>
+
+            <button type="button" onclick="submitForm()">Proceed</button>
+        </form>
+    </div>
+
+    Thank You Message 
+    <div class="thank-you-message" id="thank-you-message" style="display:none;">
+        <p>Thank you! You will be redirected shortly...</p>
+    </div> -->
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/same class with oldie.jpg" alt="About Us" 
+                    class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">At TechnoSpeak, we focus on making technology simple and accessible for everyone. Our mission is to guide you through 
+                        platforms like Microsoft, Google, and Microsoft with practical lessons that reduce frustration and build confidence. We're not just about 
+                        gaining followers or profit — we’re about helping you succeed, feel secure, and truly empowered in the digital world. Your success is 
+                        our priority, and we are here to support you every step of the way.
+                    </p>
+                    <div class="class social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </section>    
+
+    <!-- Team section -->
+    <section class="team-section" id="team">
+        <h2 class="section-title">Team</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+                <div class="slider-wrapper">
+                    <ul class="team-list swiper-wrapper">
+                        <li class="team swiper-slide">
+                            <img src="images/Norris.jpg" alt="Team1" class="team-image">
+                            <h3 class="name">Norris Dzotizeyi</h3>
+                            <i class="description">Mentor <br>IT (Information Technology): <br>Computer Technician <br>IT - Online Website</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/omega.jpg" alt="Team2" class="team-image">
+                            <h3 class="name">Nkosingiphile Omega Sithebe</h3>
+                            <i class="description">IT (Information Technology): <br>Software Engineer <br>Project Manager, Content Creation</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/hloks.jpeg" alt="Team3" class="team-image">
+                            <h3 class="name">Lehlogonolo Chauke</h3>
+                            <i class="description">IT (Information Technology): <br> Software Engineer <br>Content Creation, Editing Team</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/rose.jpeg" alt="Team4" class="team-image">
+                            <h3 class="name">Rose Tebogo Ndhlovu</h3>
+                            <i class="description">IT (Information Technology): <br> System Development <br>Content Team</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/zinhle.jpeg" alt="Team5" class="team-image">
+                            <h3 class="name">Zinhle Bridgette Ngobeni</h3>
+                            <i class="description">IT (Information Technology): <br> Business Analyst <br>Marketing Team</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/junior.jpeg" alt="Team6" class="team-image">
+                            <h3 class="name">Khuliso Junior Ravhuravh</h3>
+                            <i class="description">IT (Information Technology): <br> Software Development and  Operations (DevOps) <br>Content Creation. Editing Team</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/phuti.jpeg" alt="Team7" class="team-image">
+                            <h3 class="name">Phuti Palesa Rammutla</h3>
+                            <i class="description">IT (Information Technology): <br>Computer Scientist & Google IT Support <br>Critical Analysis </i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/pfuxeto.jpeg" alt="Team8" class="team-image">
+                            <h3 class="name">Pfuxeto Brilliant Chauke</h3>
+                            IT administrator
+                            <i class="description">IT (Information Technology): <br>Communication Networks <br>Critical Analysis</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/witness.jpeg" alt="Team9" class="team-image">
+                            <h3 class="name">Witness Munyai</h3>
+                            <i class="description">IT (Information Technology): <br>Data Analyst <br>Content Creation, Creative Team</i>
+                        </li>
+                        <li class="team swiper-slide">
+                            <img src="images/faith.jpeg" alt="Team10" class="team-image">
+                            <h3 class="name">Faith Maswangayi</h3>
+                            <i class="description">IT (Information Technology): <br> Software Engineer / MBChB<br>Marketing Team</i>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Gallery section -->
+     <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="images/Online bold girl.png" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/africans to study group.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/lecturer.png" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/linkedin-sales-solutions.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/african girl to guy.jpg" alt="" class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/african elearning.jpg" alt="" class="gallery-image">
+                </li>
+            </ul>
+        </div>
+     </section>
+
+     <!-- Contact Us section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>3 Georgian Cres W, Bryanston East, Johannesburg, 2191</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>http://growmeonline.co.za/#contact</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+27 861 777 372</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday - Friday 08:30 AM - 17:00 PM</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Saturday & Sunday: Closed</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>http://growmeonline.co.za/</p>
+                </li>
+            </ul>
+
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your name" class="form-input" required>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <textarea placeholder="Your message" class="form-input" required></textarea>
+                <button class="button submit-button">Submit</button>
+            </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">© 2024 TechnoSpeak</p>
+
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Lesson policy</a>
+            </p>
+        </div>
+      </footer>
+
+
+
+    <script src="main.js"></script>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      
+
+</body>
+</html>
