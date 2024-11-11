@@ -27,16 +27,13 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#course" class="nav-link">Course</a>
-                </li>
-                <li class="nav-item">
                     <a href="#team" class="nav-link">Team</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <button onclick="showLoginOptions()">Login/Signup</button>
+                    <a href="#" onclick="logout()">Logout</a>
                 </li>
             </ul>
 
@@ -46,23 +43,18 @@
 
     <main>
         <!-- Hero section -->
-        <section class="hero-section">
-            <div class="section-content">
-                <div class="hero-details">
-                    <h1 class="title">Online Courses</h1>
-                    <h3 class="subtitle">Learn to Use Social Media Effectively</h3>
-                    <p class="description">Join our community and master social media with expert-led courses.</p>
-    
-                    <div class="buttons">
-                        <a href="" class="button book-course">Book Course</a>
-                        <a href="#contact" class="button contact-us">Contact Us</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="images/learn_yellow and blue_girl.jpg" alt="Hero" class="hero-image">
+        <section class="video-section">
+            <h2>Our Video Courses</h2>
+            <div class="video-container">
+                <!-- Repeat similar blocks for each course -->
+                <div class="video-block">
+                    <video src="path/to/video.mp4" controls></video>
+                    <h3>Course Title</h3>
                 </div>
             </div>
+            <button onclick="showAssignCourse()">Assign Course</button>
         </section>
+        
 
         <!-- About section -->
         <section class="about-section" id="about">
@@ -84,70 +76,6 @@
                         <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
                     </div> 
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Course Section -->
-        <section class="course-section" id="course">
-            <h2 class="section-title">Our Courses</h2>
-            <div class="section-content">
-                <ul class="course-list">
-                    <!-- Course Item 1 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E Microsoft services.webp" alt="Microsoft" class="course-image">
-                        <h3 class="name">Microsoft Office</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            Microsoft Office is a versatile productivity suite offering tools like Word, Excel, PowerPoint, and Outlook for creating documents, managing data, and communicating. Through Microsoft 365, it also provides cloud-based services like Teams, OneDrive, and SharePoint, enabling seamless collaboration and access across devices.
-                        </p>
-                    </li>
-                    <!-- Course Item 2 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E  AI ChatBots.webp" alt="AI ChatBots" class="course-image">
-                        <h3 class="name">AI ChatBots</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            Windows is a user-friendly operating system that offers multitasking, built-in security, and seamless access to apps like Microsoft Edge and Office, making it ideal for personal and professional use.
-                        </p>
-                    </li>
-                    <!-- Course Item 3 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E  Windows.webp" alt="WindowsOS" class="course-image">
-                        <h3 class="name">Windows OS (Operating System)</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            AI chatbots like ChatGPT, Microsoft CoPilot, BlackBox, and Gemini use advanced NLP to assist with tasks, automate workflows, and provide information, making complex tasks easier across industries.
-                        </p>
-                    </li>
-                    <!-- Course Item 4 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E  Google.webp" alt="Google" class="course-image">
-                        <h3 class="name">Google Services</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            services like Gmail, Google Drive, Google Docs, Google Maps, and Google Photos. It powers many devices through Android and offers productivity tools like Google Assistant, enhancing connectivity worldwide.
-                        </p>
-                    </li>
-                    <!-- Course Item 5 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E PDF AI.webp" alt="PDF/PDFAI" class="course-image">
-                        <h3 class="name">PDF / PDF AI</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            PDF AI improves document productivity and access by offering text extraction, natural language processing, form recognition, and integration with virtual assistants. It also ensures data security. Key benefits include faster processing, reduced manual work, better content access, and improved accuracy.
-                        </p>
-                    </li>
-                    <!-- Course Item 6 -->
-                    <li class="course-item">
-                        <img src="images/DALL·E YouTube.webp" alt="YouTube" class="course-image">
-                        <h3 class="name">YouTube</h3>
-                        <a href="javascript:void(0)" class="read-more-link" onclick="toggleDescription(this)">Read more</a>
-                        <p class="text hidden">
-                            YouTube is a top video-sharing platform where users upload, watch, and share videos. It offers features like personalized recommendations, live streaming, playlists, and monetization options. YouTube supports high-quality video streaming and community engagement through likes and comments.
-                        </p>
-                    </li>
-                </ul>
             </div>
         </section>
 

@@ -23,6 +23,9 @@
     --pink-color: #D033B0;
     --light-pink-color: #FCE8EA;
     --light-pink-color2: #faf4f5;
+    --main-color: #4a3adc;
+    --dark-color: #11152a;
+    --light-color:#d0d4ed;
 
 
     /* Font size */
@@ -311,6 +314,16 @@ header .navbar {
 
 .course-section .course-list .course-item .text {
     font-size: var(--font-size-m);
+}
+
+/* Hidden links */
+.hidden {
+    display: none;
+}
+.read-more-link {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* Team section */
@@ -656,3 +669,246 @@ header .navbar {
         gap: 20px;
     }
 }
+
+
+/* Continuation Login Page Process*/
+/* Login/Signup Button Styling */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-buttons .login-btn, .auth-buttons .signup-btn {
+    padding: 10px 25px;
+    color: var(--white-color);
+    background: var(--green-color);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+}
+
+.auth-buttons .login-btn:hover, .auth-buttons .signup-btn:hover {
+    background: var(--secondary-color);
+}
+
+
+/* Login Page Styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--light-pink-color2);
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: var(--white-color);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .form-title {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    margin-bottom: 20px;
+    color: var(--grey-color);
+}
+
+.login-form .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--medium-gray-color);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-n);
+}
+
+.login-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--green-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form .submit-btn:hover {
+    background: var(--secondary-color);
+}
+
+
+/* Signup Page Styling */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--light-blue-color);
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: var(--white-color);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form .form-title {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    margin-bottom: 20px;
+    color: var(--grey-color);
+}
+
+.signup-form .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--medium-gray-color);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-n);
+}
+
+.signup-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--pink-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signup-form .submit-btn:hover {
+    background: var(--secondary-color);
+}
+
+
+
+/* Home Page After Login Styling */
+.home-page {
+    padding: 60px;
+    background: var(--light-pink-color2);
+}
+
+.home-page .welcome-message {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--green-color);
+    margin-bottom: 30px;
+}
+
+.home-page .user-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-page .user-options .option {
+    padding: 15px 30px;
+    background: var(--green-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.home-page .user-options .option:hover {
+    background: var(--secondary-color);
+}
+
+
+/* Video Courses Section */
+.video-courses-section {
+    padding: 60px 20px;
+    background: var(--grey-color);
+    color: var(--white-color);
+}
+
+.video-courses-section .section-title {
+    color: var(--primary-color);
+    font-size: var(--font-size-xl);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video-courses-section .course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-courses-section .course-item {
+    width: calc(33% - 20px);
+    padding: 20px;
+    background: var(--dark-color);
+    border-radius: var(--border-radius-s);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.video-courses-section .course-item:hover {
+    background: var(--brown-color);
+}
+
+.video-courses-section .course-item .course-title {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 10px;
+}
+
+.video-courses-section .course-item .course-description {
+    font-size: var(--font-size-s);
+    color: var(--medium-gray-color);
+}
+
+
+/* Assign Course Button and Dropdown Styling */
+.assign-course {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.assign-course .dropdown {
+    width: 250px;
+    padding: 10px;
+    font-size: var(--font-size-n);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-gray-color);
+    background: var(--white-color);
+    color: var(--grey-color);
+}
+
+.assign-course .assign-btn {
+    padding: 10px 20px;
+    background: var(--green-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.assign-course .assign-btn:hover {
+    background: var(--secondary-color);
+}
+
+
+
+
+
