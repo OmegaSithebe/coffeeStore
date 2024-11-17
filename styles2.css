@@ -71,7 +71,7 @@ body{
     font-weight: 400;
     line-height: 1.8;
     color: var(--dark-color);
-    background-color: #efefef;
+    background-color: var(--light-pink-color2)
 }
 
 h2{
