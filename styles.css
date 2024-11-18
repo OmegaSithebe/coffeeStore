@@ -183,8 +183,130 @@ header .navbar {
 }
 
 
-/* Hero section styling */
+/* =========================================================================================================================================== */
+/* Hero Section Styling */
 .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Left Side: Course Thumbnails */
+.hero-details {
+    width: 45%;
+}
+
+.hero-details h2 {
+    margin-bottom: 10px;
+}
+
+.course-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.thumbnail {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Right Side: Instructions */
+.hero-image-wrapper {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-wrapper h2 {
+    margin-bottom: 15px;
+}
+
+.hero-image-wrapper .link,
+.hero-image-wrapper .form-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hero-image-wrapper .form-button {
+    cursor: pointer;
+}
+
+.hero-image-wrapper .link:hover,
+.hero-image-wrapper .form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden Form */
+.booking-form {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.booking-form h3 {
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Hero section styling */
+/* .hero-section {
     min-height: 100vh;
     background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
 }
@@ -252,7 +374,7 @@ header .navbar {
 
 .hero-section .hero-image-wrapper img {
     border-radius: var(--border-radius-circle);
-}
+} */
 
 
 /* About section */

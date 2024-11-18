@@ -53,10 +53,16 @@ function toggleDescription(link) {
     }
 }
 
-// Login/SignUp 
+// Login/SignUp
 function redirectToLogin() {
     window.location.href = 'loginSignUp.html';
 }
+
+// Logout
+function redirectToIndex() {
+    window.location.href = 'index.html';
+}
+
 
 
 function redirectToHomePage(event) {
@@ -142,31 +148,12 @@ if (signupButton && loginButton && siteContainer) {
     });
 }
 
-// ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 
-
-document.getElementById("assign-course-button").addEventListener("click", () => {
-    document.getElementById("form-overlay").style.display = "block";
-    document.getElementById("form-popup").style.display = "block";
-});
-
-function submitForm() {
-    const courseName = document.getElementById("course-name").value;
-    const courseCost = document.getElementById("course-cost").value;
-
-    document.getElementById("thank-you-message").style.display = "block";
-    document.getElementById("form-popup").style.display = "none";
-    document.getElementById("form-overlay").style.display = "none";
-
-    setTimeout(() => {
-        window.location.href = `https://example.com/playlist/${courseName}`;
-    }, 3000);
+function showForm() {
+    const form = document.getElementById("bookingForm");
+    form.style.display = form.style.display === "block" ? "none" : "block";
 }
-
-
-
-
 
 
 
