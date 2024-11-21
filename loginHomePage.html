@@ -6,7 +6,7 @@
     <title>TechnoSpeak</title>
     <!-- Linking Font Awesome font icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
@@ -55,20 +55,39 @@
                 <div class="hero-details">
                     <h2>Available Courses</h2>
                     <div class="course-thumbnails">
-                        <div class="thumbnail">Course 1</div>
-                        <div class="thumbnail">Course 2</div>
-                        <div class="thumbnail">Course 3</div>
-                        <div class="thumbnail">Course 4</div>
+                        <div class="thumbnail">
+                            <img src="./images/DALL·E  Google.webp" alt="Google">
+                            <p>Google</p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./images/DALL·E  Windows.webp" alt="Windows OS">
+                            <p>Windows OS</p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./images/DALL·E - Microsoft 2.webp" alt="Microsoft">
+                            <p>Microsoft Office</p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./images/DALL·E  AI ChatBots.webp" alt="ChatBots">
+                            <p>ChatBots AI</p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./images/DALL·E YouTube.webp" alt="YouTube">
+                            <p>YouTube</p>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="./images/programmingLan.png" alt="Programming Languages">
+                            <p>Programming Languages</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Right Side: Instructions -->
                 <div class="hero-image-wrapper">
-                    <h2>Instructions</h2>
-                    <p>Watch the intro course videos by clicking the link below:</p>
-                    <a href="introVideos.html" class="link">View Intro Videos</a>
+                    <h2>Instructions:</h2>
+                    <p>Watch the intro course videos by clicking the link below:</p><br>
+                    <a href="Youtube-Clone/index.html" class="link">View Intro Videos</a>
 
-                    <p>To book a course, click the link below to fill out the form:</p>
+                    <p>To book a course, click the link below to fill out the form:</p><br>
                     <button class="form-button" onclick="showForm()">Book a Course</button>
 
                     <!-- Hidden Form -->
@@ -83,10 +102,12 @@
                     
                             <label for="course">Choose a Course:</label>
                             <select id="course" name="course" required>
-                                <option value="course1">Course 1</option>
-                                <option value="course2">Course 2</option>
-                                <option value="course3">Course 3</option>
-                                <option value="course4">Course 4</option>
+                                <option value="course1">Google</option>
+                                <option value="course2">Windows OS</option>
+                                <option value="course3">Microsoft</option>
+                                <option value="course4">ChatBots AI</option>
+                                <option value="course4">YouTube</option>
+                                <option value="course4">Programming</option>
                             </select>
                     
                             <label for="cost">Select Cost:</label>
