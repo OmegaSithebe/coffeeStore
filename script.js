@@ -66,19 +66,23 @@ function redirectToIndex() {
 
 
 function redirectToHomePage(event) {
-    event.preventDefault(); // Prevent the default form submission
-    window.location.href = 'loginHomePage.html'; // Redirect to the home page
+    event.preventDefault(); 
+    window.location.href = 'loginHomePage.html'; 
 }
 
 // Submit button Sign Up
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // This ensures a smooth scrolling effect
+        behavior: 'smooth' 
     });
 }
 
-
+function showThankYouMessage(event) {
+    event.preventDefault(); 
+    alert("Thank you, we'll be in touch. Please feel free to browse through the TechnoSpeak site.");
+    event.target.reset(); 
+}
 
 // Login Options Display
 function showLoginOptions() {
