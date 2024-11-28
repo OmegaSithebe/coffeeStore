@@ -91,35 +91,35 @@
                     <button class="form-button" onclick="showForm()">Book a Course</button>
 
                     <!-- Hidden Form -->
-                    <div class="booking-form" id="bookingForm">
-                        <h3>Course Booking Form</h3>
-                        <form action="submitForm.html">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                    
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                    
-                            <label for="course">Choose a Course:</label>
-                            <select id="course" name="course" required>
-                                <option value="course1">Google</option>
-                                <option value="course2">Windows OS</option>
-                                <option value="course3">Microsoft</option>
-                                <option value="course4">ChatBots AI</option>
-                                <option value="course4">YouTube</option>
-                                <option value="course4">Programming</option>
-                            </select>
-                    
-                            <label for="cost">Select Cost:</label>
-                            <select id="cost" name="cost" required>
-                                <option value="800">R800 - Intermediate</option>
-                                <option value="1500">R1500 - Professional</option>
-                                <option value="2000">R2000 - Expert</option>
-                            </select>
-                    
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+<div class="booking-form" id="bookingForm">
+    <h3>Course Booking Form</h3>
+    <form id="courseBookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Choose a Course:</label>
+        <select id="course" name="course" required>
+            <option value="course1">Google</option>
+            <option value="course2">Windows OS</option>
+            <option value="course3">Microsoft</option>
+            <option value="course4">ChatBots AI</option>
+            <option value="course5">YouTube</option>
+            <option value="course6">Programming</option>
+        </select>
+
+        <label for="cost">Select Cost:</label>
+        <select id="cost" name="cost" required>
+            <option value="800">R800 - Intermediate</option>
+            <option value="1500">R1500 - Professional</option>
+            <option value="2000">R2000 - Expert</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
                 
                  </div>
             </div>

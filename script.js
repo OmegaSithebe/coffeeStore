@@ -161,3 +161,13 @@ function showForm() {
 
 
 
+ // Attach an event listener to the form
+ document.getElementById('courseBookingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Show a popup message
+    alert('Our TechnoSpeak team will be in touch shortly, thank you.');
+
+    // Reset the form
+    this.reset();
+});
